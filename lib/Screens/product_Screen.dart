@@ -308,7 +308,7 @@ class DisplayProductPage extends StatefulWidget {
 class _DisplayProductPageState extends State<DisplayProductPage> {
   final ValueNotifier<int> isSelected = ValueNotifier<int>(0);
   final List<String> categories = [
-    'All Braids', 'African Braid', 'Nigerian Braid', 'Men', 'Women', 'Boys', 'Girls', 'Women', 'Hajj & Umrah', 'Saudi'
+    'Mens', 'Women', 'Sports', 'Women', 'Boys', 'Girls', 'Brands', 'Sports','Arabia','Clearance'
   ];
 
 
@@ -327,9 +327,9 @@ class _DisplayProductPageState extends State<DisplayProductPage> {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: selected == index ? Colors.green : Colors.green.shade300,
-              borderRadius: BorderRadius.circular(8),
+              //borderRadius: BorderRadius.circular(8),
             ),
-            child: Text(name, style: const TextStyle(color: Colors.white)), // `const` here
+            child: Text(name, style: const TextStyle(color: Colors.white)),
           );
         },
       ),
@@ -508,9 +508,6 @@ class _DisplayProductPageState extends State<DisplayProductPage> {
         width: MediaQuery.of(context).size.width,
         child: Column(
           children: [
-            Container(height: 50, color: Colors.black, child: const RowDrawerContent()),
-            const SizedBox(height: 10),
-            buildSortAndFilterRow(context),
             const SizedBox(height: 10),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -522,13 +519,18 @@ class _DisplayProductPageState extends State<DisplayProductPage> {
               child: ValueListenableBuilder<int>(
                 valueListenable: isSelected,
                 builder: (context, selected, _) {
-                  switch (selected) {
-                    case 1:
-                      return buildAfricanBraids();
-                    case 2:
-                      return buildNigerianBraids();
-                    default:
-                      return buildAllBraids();
+                  if (selected case 1) {
+                    return buildAfricanBraids();
+                  } else if (selected case 2) {
+                    return buildNigerianBraids();
+                  } else if (selected case 3) {
+                    return buildNigerianBraids();
+                  } else if (selected case 4) {
+                    return buildNigerianBraids();
+                  } else if (selected case 5) {
+                    return buildNigerianBraids();
+                  } else {
+                    return buildAllBraids();
                   }
                 },
               ),
