@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "262123330851",
+    "project_id": "my-e-commerce-fbe30",
+    "storage_bucket": "my-e-commerce-fbe30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262123330851:android:15e66ef2d0204fdbf5c096",
+        "android_client_info": {
+          "package_name": "com.tunedcommerce.ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262123330851-nsl6a25h4hot3bd7u7mbsrvugo9eis12.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tunedcommerce.ecommerce_app",
+            "certificate_hash": "a6fe8c78cef805b39dd8f3c96510779d586ce503"
+          }
+        },
+        {
+          "client_id": "262123330851-5i7n9f77qvodp9rm9ik7a4mlabg227ua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDACzLZiS7H6qFiB39hRoCDlnnvlWRvnNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262123330851-5i7n9f77qvodp9rm9ik7a4mlabg227ua.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262123330851-q1b6dt1l1j4546udqt3jsqdnohi96o53.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "my-e-commerce-fbe30"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
