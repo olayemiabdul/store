@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/Screens/categories.dart';
 import 'package:ecommerce_app/Screens/favourite_screen.dart';
 import 'package:ecommerce_app/home/home_screen.dart';
 import 'package:ecommerce_app/Screens/profile.dart';
@@ -35,6 +36,7 @@ class _HomePageState extends State<HomePage> {
   // Bottom navigation bar pages
   List<Widget> pages = [
     const HomeScreen(),
+    const ProductCategoryPage(),
     const FavouriteScreen(),
     const UserProfileScreen(),
     const DeliveryPageScreen(),
@@ -174,6 +176,10 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
             label: 'Home',
             icon: Icon(FontAwesomeIcons.house, size: 24),
+          ),
+          BottomNavigationBarItem(
+            label: 'Search',
+            icon: Icon(FontAwesomeIcons.searchengin, size: 24),
           ),
           BottomNavigationBarItem(
             label: 'Favourite',

@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../Screens/categories.dart';
 import '../Screens/product_Screen.dart';
 import '../Widget/constant.dart';
 
@@ -155,7 +156,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const SizedBox(width: 10.0),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                const ProductCategoryPage()));
+                      },
                       child: const Text('message from server'),
                     ),
                   ],
